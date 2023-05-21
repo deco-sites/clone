@@ -8461,7 +8461,7 @@
       ],
       "title": "deco-sites/clone/components/search/SearchResult.tsx@Props"
     },
-    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvYmVuZWZpdHMudHN4@BenefitsProps": {
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvQmVuZWZpdHMudHN4@BenefitsProps": {
       "type": "object",
       "properties": {
         "image": {
@@ -8498,14 +8498,14 @@
       ],
       "title": "BenefitsProps"
     },
-    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvYmVuZWZpdHMudHN4@BenefitsProps[]": {
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvQmVuZWZpdHMudHN4@BenefitsProps[]": {
       "type": "array",
       "items": {
-        "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvYmVuZWZpdHMudHN4@BenefitsProps"
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvQmVuZWZpdHMudHN4@BenefitsProps"
       },
       "title": "BenefitsProps[]"
     },
-    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvYmVuZWZpdHMudHN4@Props": {
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvQmVuZWZpdHMudHN4@Props": {
       "type": "object",
       "properties": {
         "title": {
@@ -8516,14 +8516,14 @@
           "title": "Title"
         },
         "benefits": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvYmVuZWZpdHMudHN4@BenefitsProps[]",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvQmVuZWZpdHMudHN4@BenefitsProps[]",
           "title": "Benefits"
         }
       },
       "required": [
         "benefits"
       ],
-      "title": "deco-sites/clone/components/Spotify/benefits.tsx@Props"
+      "title": "deco-sites/clone/components/Spotify/Benefits.tsx@Props"
     },
     "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@ImageProps": {
       "type": "object",
@@ -11806,7 +11806,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvYmVuZWZpdHMudHN4@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvQmVuZWZpdHMudHN4@Props"
         }
       ],
       "required": [
