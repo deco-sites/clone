@@ -1,1 +1,1 @@
-export { default } from "$store/components/Spotify/benefits.tsx";
+export { default } from "$store/components/Spotify/CustomBenefits.tsx";
