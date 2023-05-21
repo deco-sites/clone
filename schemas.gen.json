@@ -93,6 +93,11 @@
               "deco-sites/clone/sections/ProductDetails.tsx",
               "deco-sites/clone/sections/ProductShelf.tsx",
               "deco-sites/clone/sections/SearchResult.tsx",
+              "deco-sites/clone/sections/Spotify/Benefits.tsx",
+              "deco-sites/clone/sections/Spotify/Footer.tsx",
+              "deco-sites/clone/sections/Spotify/Header.tsx",
+              "deco-sites/clone/sections/Spotify/Hero.tsx",
+              "deco-sites/clone/sections/Spotify/Plans.tsx",
               "deco-sites/clone/sections/WhatsApp.tsx",
               "deco-sites/clone/sections/WishlistGallery.tsx",
               "deco-sites/std/sections/Analytics.tsx",
@@ -7502,7 +7507,7 @@
       "required": [],
       "title": "OptionalColors"
     },
-    "ZGVjby1zaXRlcy9jbG9uZS9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Colors&b966eeb0bbdb3699ee11b12ce6a39cc4": {
+    "ZGVjby1zaXRlcy9jbG9uZS9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@0eaa9415e9e4579f9cee06168b29d249&Colors": {
       "allOf": [
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Colors"
@@ -7518,7 +7523,7 @@
           "required": []
         }
       ],
-      "title": "Colors&b966eeb0bbdb3699ee11b12ce6a39cc4"
+      "title": "0eaa9415e9e4579f9cee06168b29d249&Colors"
     },
     "ZGVjby1zaXRlcy9jbG9uZS9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Miscellaneous": {
       "type": "object",
@@ -7621,7 +7626,7 @@
       "type": "object",
       "properties": {
         "colors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@Colors&b966eeb0bbdb3699ee11b12ce6a39cc4",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9zZWN0aW9ucy9EZXNpZ25TeXN0ZW0udHN4@0eaa9415e9e4579f9cee06168b29d249&Colors",
           "title": "Colors"
         },
         "miscellaneous": {
@@ -8456,6 +8461,726 @@
       ],
       "title": "deco-sites/clone/components/search/SearchResult.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvYmVuZWZpdHMudHN4@BenefitsProps": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Url"
+            },
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            }
+          },
+          "required": [
+            "url",
+            "alt"
+          ],
+          "title": "Image"
+        },
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "description": {
+          "type": "string",
+          "title": "Description"
+        }
+      },
+      "required": [
+        "image",
+        "title",
+        "description"
+      ],
+      "title": "BenefitsProps"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvYmVuZWZpdHMudHN4@BenefitsProps[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvYmVuZWZpdHMudHN4@BenefitsProps"
+      },
+      "title": "BenefitsProps[]"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvYmVuZWZpdHMudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "benefits": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvYmVuZWZpdHMudHN4@BenefitsProps[]",
+          "title": "Benefits"
+        }
+      },
+      "required": [
+        "benefits"
+      ],
+      "title": "deco-sites/clone/components/Spotify/benefits.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@ImageProps": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Url"
+        },
+        "alt": {
+          "type": "string",
+          "title": "Alt"
+        }
+      },
+      "required": [
+        "url",
+        "alt"
+      ],
+      "title": "ImageProps"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@StringItem": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "title": "Label"
+        },
+        "href": {
+          "type": "string",
+          "title": "Href"
+        }
+      },
+      "required": [
+        "label",
+        "href"
+      ],
+      "title": "StringItem"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@IconItem": {
+      "type": "object",
+      "properties": {
+        "icon": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "ChevronLeft"
+            },
+            {
+              "type": "string",
+              "const": "ChevronRight"
+            },
+            {
+              "type": "string",
+              "const": "ChevronUp"
+            },
+            {
+              "type": "string",
+              "const": "ChevronDown"
+            },
+            {
+              "type": "string",
+              "const": "QuestionMarkCircle"
+            },
+            {
+              "type": "string",
+              "const": "User"
+            },
+            {
+              "type": "string",
+              "const": "ShoppingCart"
+            },
+            {
+              "type": "string",
+              "const": "Bars3"
+            },
+            {
+              "type": "string",
+              "const": "Heart"
+            },
+            {
+              "type": "string",
+              "const": "MagnifyingGlass"
+            },
+            {
+              "type": "string",
+              "const": "XMark"
+            },
+            {
+              "type": "string",
+              "const": "Plus"
+            },
+            {
+              "type": "string",
+              "const": "Minus"
+            },
+            {
+              "type": "string",
+              "const": "MapPin"
+            },
+            {
+              "type": "string",
+              "const": "Phone"
+            },
+            {
+              "type": "string",
+              "const": "Elo"
+            },
+            {
+              "type": "string",
+              "const": "Mastercard"
+            },
+            {
+              "type": "string",
+              "const": "Visa"
+            },
+            {
+              "type": "string",
+              "const": "Pix"
+            },
+            {
+              "type": "string",
+              "const": "Logo"
+            },
+            {
+              "type": "string",
+              "const": "Facebook"
+            },
+            {
+              "type": "string",
+              "const": "Instagram"
+            },
+            {
+              "type": "string",
+              "const": "Tiktok"
+            },
+            {
+              "type": "string",
+              "const": "Truck"
+            },
+            {
+              "type": "string",
+              "const": "Discount"
+            },
+            {
+              "type": "string",
+              "const": "Return"
+            },
+            {
+              "type": "string",
+              "const": "CreditCard"
+            },
+            {
+              "type": "string",
+              "const": "Deco"
+            },
+            {
+              "type": "string",
+              "const": "Discord"
+            },
+            {
+              "type": "string",
+              "const": "Trash"
+            },
+            {
+              "type": "string",
+              "const": "FilterList"
+            },
+            {
+              "type": "string",
+              "const": "WhatsApp"
+            },
+            {
+              "type": "string",
+              "const": "ArrowsPointingOut"
+            }
+          ],
+          "type": "string",
+          "title": "Icon"
+        }
+      },
+      "required": [
+        "icon"
+      ],
+      "title": "IconItem"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@IconItem|StringItem": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@StringItem"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@IconItem"
+        }
+      ],
+      "title": "IconItem|StringItem"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@IconItem|StringItem[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@IconItem|StringItem"
+      },
+      "title": "IconItem|StringItem[]"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@Section": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "title": "Label"
+        },
+        "children": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@IconItem|StringItem[]",
+          "title": "Children"
+        }
+      },
+      "required": [
+        "label",
+        "children"
+      ],
+      "title": "Section"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@Section[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@Section"
+      },
+      "title": "Section[]"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@SocialMediaProps": {
+      "type": "object",
+      "properties": {
+        "link": {
+          "type": "string",
+          "title": "Link"
+        },
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@ImageProps",
+          "title": "Image"
+        }
+      },
+      "required": [
+        "link",
+        "image"
+      ],
+      "title": "SocialMediaProps"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@SocialMediaProps[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@SocialMediaProps"
+      },
+      "title": "SocialMediaProps[]"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@ExtraLinksProps": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "title": "Label"
+        },
+        "url": {
+          "type": "string",
+          "title": "Url"
+        }
+      },
+      "required": [
+        "label",
+        "url"
+      ],
+      "title": "ExtraLinksProps"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@ExtraLinksProps[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@ExtraLinksProps"
+      },
+      "title": "ExtraLinksProps[]"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "logo": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@ImageProps",
+          "title": "Logo"
+        },
+        "sections": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@Section[]",
+          "title": "Sections"
+        },
+        "socialMedia": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@SocialMediaProps[]",
+          "title": "Social Media"
+        },
+        "extraLinks": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@ExtraLinksProps[]",
+          "title": "Extra Links"
+        }
+      },
+      "required": [
+        "socialMedia",
+        "extraLinks"
+      ],
+      "title": "deco-sites/clone/components/Spotify/Footer.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvSGVhZGVyLnRzeA==@LinkProps": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Text"
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Url"
+        },
+        "openInNewPage": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Open In New Page"
+        }
+      },
+      "required": [],
+      "title": "LinkProps"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvSGVhZGVyLnRzeA==@LinkProps[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvSGVhZGVyLnRzeA==@LinkProps"
+      },
+      "title": "LinkProps[]"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvSGVhZGVyLnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "links": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvSGVhZGVyLnRzeA==@LinkProps[]",
+          "title": "Links"
+        },
+        "logo": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+              "title": "Url"
+            },
+            "alt": {
+              "type": "string",
+              "title": "Alt"
+            }
+          },
+          "required": [
+            "url",
+            "alt"
+          ],
+          "title": "Logo"
+        }
+      },
+      "required": [
+        "links",
+        "logo"
+      ],
+      "title": "deco-sites/clone/components/Spotify/Header.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvSGVyby50c3g=@BtnProps": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "title": "Label"
+        },
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "style": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "dark-full"
+            },
+            {
+              "type": "string",
+              "const": "white-transparent"
+            }
+          ],
+          "type": "string",
+          "title": "Style"
+        }
+      },
+      "required": [
+        "label",
+        "url",
+        "style"
+      ],
+      "title": "BtnProps"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvSGVyby50c3g=@BtnProps[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvSGVyby50c3g=@BtnProps"
+      },
+      "title": "BtnProps[]"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvSGVyby50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "subtitle": {
+          "type": "string",
+          "title": "Subtitle"
+        },
+        "buttons": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvSGVyby50c3g=@BtnProps[]",
+          "title": "Buttons"
+        },
+        "conditions": {
+          "type": "object",
+          "properties": {
+            "link": {
+              "type": "string",
+              "title": "Link"
+            },
+            "linkText": {
+              "type": "string",
+              "title": "Link Text"
+            },
+            "text": {
+              "type": "string",
+              "title": "Text"
+            },
+            "show": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "title": "Show"
+            }
+          },
+          "required": [
+            "link",
+            "linkText",
+            "text"
+          ],
+          "title": "Conditions"
+        }
+      },
+      "required": [
+        "title",
+        "subtitle",
+        "buttons",
+        "conditions"
+      ],
+      "title": "deco-sites/clone/components/Spotify/Hero.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvUGxhbnMudHN4@PaymentMethodsProps": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Image"
+        },
+        "imageAlt": {
+          "type": "string",
+          "title": "Image Alt"
+        },
+        "name": {
+          "type": "string",
+          "title": "Name"
+        }
+      },
+      "required": [
+        "image",
+        "imageAlt",
+        "name"
+      ],
+      "title": "PaymentMethodsProps"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvUGxhbnMudHN4@PaymentMethodsProps[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvUGxhbnMudHN4@PaymentMethodsProps"
+      },
+      "title": "PaymentMethodsProps[]"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvUGxhbnMudHN4@FlagsProps": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "title": "Label"
+        },
+        "style": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "full-blue"
+            },
+            {
+              "type": "string",
+              "const": "simple"
+            }
+          ],
+          "type": "string",
+          "title": "Style"
+        }
+      },
+      "required": [
+        "label",
+        "style"
+      ],
+      "title": "FlagsProps"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvUGxhbnMudHN4@FlagsProps[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvUGxhbnMudHN4@FlagsProps"
+      },
+      "title": "FlagsProps[]"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvUGxhbnMudHN4@ButtonProps": {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string",
+          "title": "Label"
+        },
+        "link": {
+          "type": "string",
+          "title": "Link"
+        }
+      },
+      "required": [
+        "label",
+        "link"
+      ],
+      "title": "ButtonProps"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvUGxhbnMudHN4@ButtonProps[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvUGxhbnMudHN4@ButtonProps"
+      },
+      "title": "ButtonProps[]"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvUGxhbnMudHN4@PlansProps": {
+      "type": "object",
+      "properties": {
+        "flags": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvUGxhbnMudHN4@FlagsProps[]",
+          "title": "Flags"
+        },
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "description": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Description"
+        },
+        "buttons": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvUGxhbnMudHN4@ButtonProps[]",
+          "title": "Buttons"
+        },
+        "perks": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Perks"
+        },
+        "perkListImage": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Perk List Image"
+        },
+        "condition": {
+          "type": "string",
+          "title": "Condition"
+        }
+      },
+      "required": [
+        "flags",
+        "title",
+        "description",
+        "buttons",
+        "perks",
+        "condition"
+      ],
+      "title": "PlansProps"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvUGxhbnMudHN4@PlansProps[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvUGxhbnMudHN4@PlansProps"
+      },
+      "title": "PlansProps[]"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvUGxhbnMudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "subtitle": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Subtitle"
+        },
+        "paymentMethods": {
+          "type": "object",
+          "properties": {
+            "items": {
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvUGxhbnMudHN4@PaymentMethodsProps[]",
+              "title": "Items"
+            },
+            "show": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "title": "Show"
+            }
+          },
+          "required": [
+            "items"
+          ],
+          "title": "Payment Methods"
+        },
+        "plans": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvUGxhbnMudHN4@PlansProps[]",
+          "title": "Plans"
+        }
+      },
+      "required": [
+        "paymentMethods",
+        "plans"
+      ],
+      "title": "deco-sites/clone/components/Spotify/Plans.tsx@Props"
+    },
     "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL3VpL1doYXRzQXBwLnRzeA==@Props": {
       "type": "object",
       "properties": {
@@ -8857,7 +9582,11 @@
         },
         "name": {
           "type": "string",
-          "title": "Name"
+          "title": "The audience name (will be used on cookies).",
+          "description": "Add a meaningful short word for the audience name.",
+          "maxLength": 22,
+          "minLength": 3,
+          "pattern": "^[A-Za-z0-9_]+$"
         },
         "routes": {
           "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route[]",
@@ -8973,7 +9702,7 @@
       ],
       "title": "WorkflowRef"
     },
-    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@95abd76f92dd138f258080286726977e|WorkflowRef": {
+    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@6fafe0f553db3c0685828404a37be338|WorkflowRef": {
       "anyOf": [
         {
           "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef"
@@ -8991,13 +9720,13 @@
           ]
         }
       ],
-      "title": "95abd76f92dd138f258080286726977e|WorkflowRef"
+      "title": "6fafe0f553db3c0685828404a37be338|WorkflowRef"
     },
     "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@Props": {
       "type": "object",
       "properties": {
         "workflow": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@95abd76f92dd138f258080286726977e|WorkflowRef",
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@6fafe0f553db3c0685828404a37be338|WorkflowRef",
           "title": "Workflow"
         },
         "id": {
@@ -11072,6 +11801,111 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9jbG9uZS9zZWN0aW9ucy9TcG90aWZ5L0JlbmVmaXRzLnRzeA==": {
+      "title": "deco-sites/clone/sections/Spotify/Benefits.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvYmVuZWZpdHMudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/clone/sections/Spotify/Benefits.tsx"
+          ],
+          "default": "deco-sites/clone/sections/Spotify/Benefits.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9zZWN0aW9ucy9TcG90aWZ5L0Zvb3Rlci50c3g=": {
+      "title": "deco-sites/clone/sections/Spotify/Footer.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvRm9vdGVyLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/clone/sections/Spotify/Footer.tsx"
+          ],
+          "default": "deco-sites/clone/sections/Spotify/Footer.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9zZWN0aW9ucy9TcG90aWZ5L0hlYWRlci50c3g=": {
+      "title": "deco-sites/clone/sections/Spotify/Header.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvSGVhZGVyLnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/clone/sections/Spotify/Header.tsx"
+          ],
+          "default": "deco-sites/clone/sections/Spotify/Header.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9zZWN0aW9ucy9TcG90aWZ5L0hlcm8udHN4": {
+      "title": "deco-sites/clone/sections/Spotify/Hero.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvSGVyby50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/clone/sections/Spotify/Hero.tsx"
+          ],
+          "default": "deco-sites/clone/sections/Spotify/Hero.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9zZWN0aW9ucy9TcG90aWZ5L1BsYW5zLnRzeA==": {
+      "title": "deco-sites/clone/sections/Spotify/Plans.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvUGxhbnMudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/clone/sections/Spotify/Plans.tsx"
+          ],
+          "default": "deco-sites/clone/sections/Spotify/Plans.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9jbG9uZS9zZWN0aW9ucy9XaGF0c0FwcC50c3g=": {
       "title": "deco-sites/clone/sections/WhatsApp.tsx",
       "type": "object",
@@ -12276,6 +13110,21 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9zZWN0aW9ucy9TZWFyY2hSZXN1bHQudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9zZWN0aW9ucy9TcG90aWZ5L0JlbmVmaXRzLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9zZWN0aW9ucy9TcG90aWZ5L0Zvb3Rlci50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9zZWN0aW9ucy9TcG90aWZ5L0hlYWRlci50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9zZWN0aW9ucy9TcG90aWZ5L0hlcm8udHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9zZWN0aW9ucy9TcG90aWZ5L1BsYW5zLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9zZWN0aW9ucy9XaGF0c0FwcC50c3g="
