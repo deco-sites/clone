@@ -43,7 +43,10 @@ export default function SpotifyPlans(
   if (!plans || plans.length === 0) return <></>;
 
   return (
-    <section className="flex w-100 px-5 justify-center bg-gray-200 py-[75px]">
+    <section
+      id="plans"
+      className="flex w-100 px-5 justify-center bg-gray-200 py-[75px]"
+    >
       <article className="flex flex-col items-center justify-center w-[1170px] max-w-[1170px]">
         {title && (
           <h2 className="text-2xl md:text-[40px] font-bold leading-none">

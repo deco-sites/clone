@@ -38,10 +38,10 @@ export default function SpotifyHero(
           {buttons.map((button) => (
             <div className="flex w-full md:h-fit md:w-fit">
               <a
-                className={`w-full md:w-fit px-8 py-[14px] text-sm text-white font-bold text-center rounded-full ${
+                className={`w-full md:w-fit px-8 py-[14px] text-sm text-white font-bold text-center rounded-full hover:scale-105 focus:scale-100 ${
                   button.style === "dark-full"
-                    ? `bg-[#191414] border-2 border-[#191414] `
-                    : `bg-transparent border-2 border-white`
+                    ? `hover:bg-[#0B0909] focus:bg-[#191414] bg-[#191414] border-2 border-[#191414]`
+                    : `hover:bg-[#1A69C7] focus:bg-transparent bg-transparent border-2 border-white`
                 }
               `}
                 href={button.url}

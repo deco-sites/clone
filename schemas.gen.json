@@ -97,6 +97,7 @@
               "deco-sites/clone/sections/Spotify/Footer.tsx",
               "deco-sites/clone/sections/Spotify/Header.tsx",
               "deco-sites/clone/sections/Spotify/Hero.tsx",
+              "deco-sites/clone/sections/Spotify/LoginForm.tsx",
               "deco-sites/clone/sections/Spotify/Plans.tsx",
               "deco-sites/clone/sections/WhatsApp.tsx",
               "deco-sites/clone/sections/WishlistGallery.tsx",
@@ -8886,6 +8887,13 @@
             "alt"
           ],
           "title": "Logo"
+        },
+        "showLoginButtons": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "title": "Show Login Buttons"
         }
       },
       "required": [
@@ -8987,6 +8995,52 @@
         "conditions"
       ],
       "title": "deco-sites/clone/components/Spotify/Hero.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvTG9naW4udHN4@AuthMethodProps": {
+      "type": "object",
+      "properties": {
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "icon": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "title": "Icon"
+        },
+        "label": {
+          "type": "string",
+          "title": "Label"
+        }
+      },
+      "required": [
+        "url",
+        "label"
+      ],
+      "title": "AuthMethodProps"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvTG9naW4udHN4@AuthMethodProps[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvTG9naW4udHN4@AuthMethodProps"
+      },
+      "title": "AuthMethodProps[]"
+    },
+    "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvTG9naW4udHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "authMethods": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvTG9naW4udHN4@AuthMethodProps[]",
+          "title": "Auth Methods"
+        }
+      },
+      "required": [
+        "title"
+      ],
+      "title": "deco-sites/clone/components/Spotify/Login.tsx@Props"
     },
     "ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvUGxhbnMudHN4@PaymentMethodsProps": {
       "type": "object",
@@ -11885,6 +11939,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy9jbG9uZS9zZWN0aW9ucy9TcG90aWZ5L0xvZ2luRm9ybS50c3g=": {
+      "title": "deco-sites/clone/sections/Spotify/LoginForm.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9jb21wb25lbnRzL1Nwb3RpZnkvTG9naW4udHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/clone/sections/Spotify/LoginForm.tsx"
+          ],
+          "default": "deco-sites/clone/sections/Spotify/LoginForm.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy9jbG9uZS9zZWN0aW9ucy9TcG90aWZ5L1BsYW5zLnRzeA==": {
       "title": "deco-sites/clone/sections/Spotify/Plans.tsx",
       "type": "object",
@@ -13122,6 +13197,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9zZWN0aW9ucy9TcG90aWZ5L0hlcm8udHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9zZWN0aW9ucy9TcG90aWZ5L0xvZ2luRm9ybS50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy9jbG9uZS9zZWN0aW9ucy9TcG90aWZ5L1BsYW5zLnRzeA=="
