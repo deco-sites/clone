@@ -143,7 +143,7 @@ export default function SpotifyPlans(
               <div className="row-start-4 row-end-4 w-100 flex flex-col">
                 {plan.buttons.map((btn) => (
                   <a
-                    className="bg-black text-white font-bold rounded-full w-100 py-4 h-fit text-center mb-4"
+                    className="bg-black hover:bg-[#0B0909] focus:bg-[#191414] hover:scale-105 focus:scale-100 text-white font-bold rounded-full w-100 py-4 h-fit text-center mb-4"
                     href={btn.link}
                   >
                     {btn.label}
