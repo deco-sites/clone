@@ -81,7 +81,7 @@ export default function SpotifyPlans(
           </div>
         )}
 
-        <div className="grid grid-cols-4 gap-x-4 mt-[50px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-4 mt-[50px]">
           {plans.map((plan) => (
             <article className="grid grid-rows-[auto_auto_1fr_1fr_1fr] bg-white shadow-md p-4 rounded-[10px]">
               <ul className="row-auto h-fit flex flex-col gap-y-[10px]">
@@ -110,17 +110,29 @@ export default function SpotifyPlans(
                 ))}
               </div>
 
-              <ul className="row-span-3 py-4 pl-5 list-disc list-outside">
+              <ul className="row-span-3 py-4">
                 {plan.perks.map((perk) => (
-                  <li className="">
-                    {plan.perkListImage && (
-                      <Image
-                        src={plan.perkListImage}
-                        alt="List image"
-                        width={24}
-                      />
-                    )}
-                    {perk}
+                  <li className="flex gap-x-[10px] items-center mb-[5px]">
+                    <svg
+                      className="w-6 min-w-[24px]"
+                      role="img"
+                      focusable="false"
+                      height="24"
+                      width="24"
+                      viewBox="0 0 24 24"
+                      aria-label=""
+                      class="Svg-ytk21e-0 fJEWJR"
+                    >
+                      <polyline
+                        points="3.32 12.86 8.9 19.4 20.99 5.26"
+                        fill="none"
+                        stroke="#181818"
+                      >
+                      </polyline>
+                    </svg>
+                    <span className="w-auto flex text-sm text-black font-medium">
+                      {perk}
+                    </span>
                   </li>
                 ))}
               </ul>
