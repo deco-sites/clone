@@ -83,7 +83,7 @@ export default function SpotifyPlans(
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-4 mt-[50px]">
           {plans.map((plan) => (
-            <article className="grid grid-rows-[auto_auto_1fr_1fr_1fr] bg-white shadow-md p-4 rounded-[10px]">
+            <article className="grid grid-rows-[100px_120px_350px_auto_140px] bg-white shadow-md p-4 rounded-[10px]">
               <ul className="row-auto h-fit flex flex-col gap-y-[10px]">
                 {plan.flags?.length > 0 && plan.flags.map((flag) => (
                   <li
@@ -100,7 +100,7 @@ export default function SpotifyPlans(
                 ))}
               </ul>
 
-              <div className="row-span-2 border-b-[1px] border-[#cccccc] py-2 pb-5">
+              <div className="row-start-2 row-end-2 border-b-[1px] border-[#cccccc] py-2 pb-5">
                 <h3 className="font-bold text-2xl leading-6">{plan.title}</h3>
 
                 {plan.description?.map((paragraph) => (
@@ -110,7 +110,7 @@ export default function SpotifyPlans(
                 ))}
               </div>
 
-              <ul className="row-span-3 py-4">
+              <ul className="row-start-3 row-end-3 row-span-3 py-4">
                 {plan.perks.map((perk) => (
                   <li className="flex gap-x-[10px] items-center mb-[5px]">
                     <svg
@@ -137,7 +137,7 @@ export default function SpotifyPlans(
                 ))}
               </ul>
 
-              <div className="row-span-4 w-100 flex flex-col">
+              <div className="row-start-4 row-end-4 w-100 flex flex-col">
                 {plan.buttons.map((btn) => (
                   <a
                     className="bg-black text-white font-bold rounded-full w-100 py-4 h-fit text-center mb-4"
@@ -149,7 +149,7 @@ export default function SpotifyPlans(
               </div>
 
               <p
-                className="row-span-5 text-xs"
+                className="row-start-5 row-end-5 text-xs"
                 dangerouslySetInnerHTML={{ __html: plan.condition }}
               />
             </article>
