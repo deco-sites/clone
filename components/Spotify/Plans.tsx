@@ -83,7 +83,7 @@ export default function SpotifyPlans(
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-4 mt-[50px]">
           {plans.map((plan) => (
-            <article className="grid grid-rows-[100px_120px_350px_auto_140px] bg-white shadow-md p-4 rounded-[10px]">
+            <article className="grid grid-rows-[100px_120px_auto_auto_140px] md:grid-rows-[100px_120px_350px_auto_140px] bg-white shadow-md p-4 rounded-[10px]">
               <ul className="row-auto h-fit flex flex-col gap-y-[10px]">
                 {plan.flags?.length > 0 && plan.flags.map((flag) => (
                   <li
